@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro de Inverno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+      <h1>Retiro de Inverno</h1>
+      <p>Dia 26 a 28 de Setembro</p>
+      <p>Chacara 2 Irmãos</p>
+      <p>Inscrições - 100$</p>
+    </div>
+
+    <div class="form-box">
+      <form action="https://script.google.com/macros/s/AKfycbyFNJiixodVyIr6Wtf7HgrOjbG6XEc9JrYzFXuaW9NfhKPorTpnWk7IO2rE2dWEzixTsA/exec" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" required minlength="11" pattern="\d{11,}" title="Insira no mínimo 11 números, apenas dígitos.">
+
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" required>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+    </div>
+
+    <div class="pagamento-box" style="display: none; text-align: center; padding: 20px;">
+      <h2>Pagamento</h2>
+      <p>Escaneie o QR Code abaixo para realizar o pagamento de <strong>R$100,00</strong>:</p>
+      <img src="qrcode-pix.png" alt="QR Code Pix" style="max-width: 300px; width: 100%; height: auto; margin-bottom: 20px;">
+
+      <p>Ou fale conosco no WhatsApp para pagamento via cartão:</p>
+      <a href="https://wa.me/5518981045700?text=Oi%2C%20Jonatas%2C%20Gostaria%20de%20realizar%20o%20pagamento%20do%20Retiro%20de%20Inverno%20via%20cart%C3%A3o
+      " target="_blank">
+      <img src="img/whats-img.webp" alt="Fale no WhatsApp" style="width: 200px; max-width: 100%;">
+      </a>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
